@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Veyron</title>
+  <link rel="shortcut icon" href="http://www.bugatti.com/touch-icon-192x192.png" />
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style type="text/css">
+  body{
+    background-color: black;
+  }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+   #head, #head * { transition: all 0.3s ease; }
+#head.shrinked
+{
+  height: 80px;
+  background-color: white;
+  opacity: 1;
+}
+   /* Let's get this party started */
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(555,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255,0,0,0.4); 
+
+}
+@font-face
+{
+  font-family:font1;
+  src:url(angel.ttf);
+}
+#headers{
+  color: black;
+  font-family: font1;
+}
+ #t1
+  {
+    background: url("http://3.bp.blogspot.com/-Gnmv9HfN5Gk/UsEqjYtacKI/AAAAAAAAFsw/JyWX29ykbcM/s1600/2006-bugatti-veyron-16-4-pic-1819238012210923102.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+  }
+  #t2
+  {
+    background: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2013/12/wallpaper-of-Bugatti7.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+  }
+   #t3
+  {
+    background: url("http://www.blirk.net/wallpapers/1366x768/bugatti-veyron-wallpaper-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+  }
+   #t4
+  {
+    background: url("http://itsmyviews.com/wp-content/uploads/2013/02/bugatti-veyron-2013-2014-interior-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+  }
+
+   .down-arrow {
+  display: inline-block;
+  position: relative;
+  background: white;
+  padding: 15px 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+}
+.down-arrow:after {
+  content: '';
+  display: block;  
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-top: 250px solid white;
+  border-right: 2500px solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 2500px solid transparent;
+}
+
+a.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: red url("cd-top-arrow.svg") no-repeat center 50%;
+  
+}
+#tie{
+  font-family: font1;
+  color: white;
+}
+
+
+
+.bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.5s infinite linear;
+  -o-animation: bounce 0.5s infinite linear;
+  -webkit-animation: bounce 0.5s infinite linear;
+  animation: bounce 0.5s infinite linear;
+  colr:000;
+}
+.fa-sort-down{
+  color: #027bdd;
+  font-size: 30px;
+  margin: 20px;
+}
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+
+#ttf
+{
+  background-color: black;
+  width:100%;
+  height: 100%;
+  opacity: 0.3;
+}
+#ss1
+{
+  font-family: font1;
+}
+@font-face
+{
+  font-family:font2;
+  src:url(sugar.ttf);
+}
+p{font-family: font2}
+  
+#app{color: white;}
+#ss2
+{
+  color: white;
+  font-family: font1;
+}
+
+  </style>
+</head>
+<body id="home">
+
+  <div class="navbar-fixed" id="head">
+    <nav class="white lighten-1">
+    <div class="nav-wrapper">
+      <a href="#home" class="brand-logo center" id="headers"><span class="light pink-text"> ------</span> Bugatti Veyron<span class="light pink-text"> ------</span>  </a>
+      <!--<ul class="left hide-on-med-and-down">
+        <li><a href="#" id="hxx">--Clothing--</a></li>
+        <li><a href="#" id="hxx">--Collection--</a></li>
+        
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#" id="hxx">--Journal--</a></li>
+        <li><a href="#" id="hxx">--About--</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse" id="y2"><i class="material-icons">menu</i></a>
+    </div>-->
+
+    </nav>
+  </div>
+
+
+
+  <!--<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>-->
+  <div class="carousel carousel-slider center" data-indicators="true" style="height:600px;">
+    <div class="carousel-fixed-item center">
+      <h4 id="tie">Bugatti Veyron Grand Sport</h4>
+      <a href="#part1" ><i class="fa fa-sort-down bounce" style="font-size:48px;color:white"></i></a>
+    </div>
+    <div class="carousel-item red white-text" href="#one!" id="t1">
+      <div id="ttf"></div>
+    </div>
+    <div class="carousel-item amber white-text" href="#two!" id="t2">
+      <div id="ttf"></div>
+    </div>
+    <div class="carousel-item green white-text" href="#three!" id="t3">
+      <div id="ttf"></div>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!" id="t4">
+      <div id="ttf"></div>
+    </div>
+  </div>
+
+  <div id="part1">
+    <div class="down-arrow">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col s12 m6 l6" >
+            <br><br>
+            <br>
+            <br>
+            <img src="http://assets.bugatti.com/typo3conf/ext/bugatti_specials/Resources/Public/Template/content/chiron/motor/chiron_motor_01.png" style="width:100%;height:100%;">
+          </div>
+          <div class="col s12 m6 l6 " >
+            <br><br>
+            <br><br>
+            <h5 id="ss1">Bugatti Veyron Super Sport</h5>
+            <hr style="width:70%;">
+            <br><p>1,200 hp, a maximum torque of 1,500 Nm, acceleration from 0 to 100 km/h in 2.5 seconds and a top speed of 415 km/h – these were the performance specs that amazed and inspired experts and car fans throughout the world when this supercar was launched in 2010. 
+ 
+          But that was not all. The same year, the Super Sport fulfilled the strict requirements of Guinness World Records and set a new world speed record for road cars of 431.072 km/h. Despite numerous attempts to dethrone the Super Sport from its status as the fastest production supercar, the Bugatti remains unbeaten to this day. 
+ 
+          The Veyron 16.4 Super Sport is completely sold out.</p>
+          <a href="#part2" ><i class="fa fa-sort-down bounce" style="font-size:48px;color:black"></i></a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <br><br>
+  <br><br>
+  
+  
+ 
+  <div class="section no-pad-bot" id="part2">
+    <div class="container">
+      <div class="row">
+          <div class="col s12 m6 l6" >
+            <br><br> <br><br> <br><br>
+            <div class="center">
+              <h5 id="ss2">Technical maxims</h5>
+              <hr style="width:70%;">
+            <p id="app">Specialist expertise amassed over the course of almost ten years’ cutting-edge development enabled the Bugatti engineers to create an upgraded Veyron that opens up new dimensions of driving. 
+ 
+            All the modifications serve to create a more powerful vehicle with even more agile handling. The increased performance of the 16-cylinder engine is primarily due to the use of four larger turbochargers and intercoolers.
+
+The Super Sport’s flat, elongated form is immediately recognisable. Instead of bonnet scoops, the 16-cylinder engine is ventilated by two NACA ducts in the roof.
+            </p>
+            <a href="#part3" ><i class="fa fa-sort-down bounce " style="font-size:48px;color:white"></i></a>
+          </div>
+          </div>
+
+          <div class="col s12 m6 l6" >
+            <br><br> <br><br> <br><br>
+            <img src="https://s-media-cache-ak0.pinimg.com/originals/d2/8a/bf/d28abfe3ae00e792968df77206b61197.jpg" style="width:100%;height:100%;">
+          </div>
+        </div>
+
+      <br><br>
+  <br><br>
+  <br><br>  
+    </div>
+  </div>
+
+
+ <div id="part3">
+    <div class="down-arrow">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col s12 m6 l6" >
+            
+      <br><br>
+  <br><br>
+            <img src="http://ebay-shop.atd-sportscars.de/ebay-shop-usa/img032015/6022ed7082af8c80e18f6dc5f609f700652555bb675e72979.jpg" style="width:100%;height:100%;">
+          </div>
+          <div class="col s12 m6 l6" id="apple">
+      <br><br>
+  <br><br>
+      <br>
+      <h5 id="ss1">Perfect technology
+with a unique design</h5>
+            <hr style="width:70%;">
+            <p>The guiding principle of the genius car designer Ettore Bugatti, who came from a family of artists, was to always encase perfect technology in an aesthetically appealing exterior. This commitment lives on today: the designers gave the Veyron 16.4 Super Sport an utterly unique appearance – and at the same time, every single exterior modification serves to improve performance. </p>
+          </div>
+          <a href="#part4" ><i class="fa fa-sort-down bounce " style="font-size:48px;color:black"></i></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <br><br>
+  <br><br>
+  <br><br>
+  
+  
+ 
+  <div class="section no-pad-bot" id="part4">
+    <div class="container">
+      <div class="row">
+          <div class="col s12 m6 l6" ><br><br> <br><br> <br><br>
+            <div class="center">
+              <h5 id="ss2">About Bugatti</h5>
+              <hr style="width:70%;">
+            <p id="app">Bugatti Automobiles S.A.S. is a French high-performance luxury automobiles manufacturer and a subsidiary of Volkswagen AG, with its head office and assembly plant in Molsheim, Alsace, France. Volkswagen purchased the Bugatti trademark in June 1998 and incorporated Bugatti Automobiles S.A.S. in 1999.
+
+Bugatti presented several concept cars between 1998 and 2000 before commencing development of its first production model, the Veyron 16.4, delivering the first Veyron to a customer in 2005.
+</p>
+          </div>
+
+          </div>
+          <div class="col s12 m6 l6" >
+            <br><br>
+            <br><br>
+              <br><br>
+            <img src="http://www.bugatti.com/typo3conf/ext/bugatti_design/Resources/Public/Images/bugatti.png" style="width:100%;height:100%;">
+          </div>
+        </div>
+ <br><br>
+
+
+      <div class="row center">
+
+         <a href="https://www.facebook.com/bugatti/" target="_blank"><span class="fa-stack fa-lg">
+                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x"></i>
+                </span></a>
+                <a href="https://www.instagram.com/bugatti/" target="_blank"><span class="fa-stack fa-lg">
+                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x"></i>
+                </span></a>
+                <a href="#"><span class="fa-stack fa-lg">
+                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                  <i class="fa fa-whatsapp fa-stack-1x"></i>
+                </span></a>
+                <a href="https://github.com/johnorgs" target="_blank"><span class="fa-stack fa-lg">
+                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x "></i>
+                </span></a>
+                
+      </div>
+    
+
+      <br><br>
+  <br><br>
+  <br><br>  
+    </div>
+  </div>
+ 
+
+
+<a href="#" class="back-to-top">Back to Top</a>
+  
+
+
+<script type="text/javascript">var amountScrolled = 300;
+
+$(window).scroll(function() {
+  if ( $(window).scrollTop() > amountScrolled ) {
+    $('a.back-to-top').fadeIn('slow');
+  } else {
+    $('a.back-to-top').fadeOut('slow');
+  }
+});</script>
+<script type="text/javascript">$('a.back-to-top').click(function() {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 400);
+  return false;
+});</script>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+      $('.carousel').carousel();
+    });
+  $('.carousel.carousel-slider').carousel({full_width: true});</script>
+  </body>
+  <script>
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 100) { //Adjust 150
+        $('#head').addClass('shrinked');
+        } else {
+        $('#head').removeClass('shrinked');
+        }
+    });
+  </script>
+
+<script >
+  $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+          $('html, body').animate({
+          scrollTop: target.offset().top
+          }, 400);
+          return false;
+        }
+      }
+  });
+  </script>
+  <script type="text/javascript">  $(document).ready(function(){
+      $('.parallax').parallax();
+    });</script>
+</html>
